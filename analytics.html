@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorless</title>
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 1.2rem;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .page {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin: 20px 0 0 20px;
+    }
+    p, h1, h3 {
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    h3 {
+      font-size: 1.3rem;
+    }
+    .information span {
+      font-weight: bold;
+    }
+    .information {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .statistics-table, .task-table {
+      border: 1px solid #000000;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    .statistics-table-td, .task-table-td {
+      border: 1px solid black;
+      padding: 5px;
+    }
+    .statistics-table-td span {
+      font-weight: bold;
+    }
+    .recomendations-text {
+      margin-top: 10px;
+    }
+    .topics-preamble {
+      margin-top: 10px;
+    }
+    .topics-block {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .topic {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .topic-title {
+      margin-left: 15px;
+    }
+    .topic-second {
+      margin-left: 15px;
+    }
+    .topic-third {
+      margin-left: 30px;
+    }
+    .topic-fourth {
+      margin-left: 45px;
+    }
+    .topic-fifth {
+      margin-left: 60px;
+    }
+    .topic-sixth {
+      margin-left: 75px;
+    }
+    .consultation-preamble {
+      margin-top: 10px;
+    }
+    .question-title {
+      margin-top: 15px;
+    }
+    .variants, .time, .result, .explanation {
+      margin-left: 20px;
+    }
+    .variants {
+      margin-top: 10px;
+    }
+    .variant.right {
+      color: red;
+    }
+    .variant.wrong {
+      color: green;
+    }
+    .time {
+      margin-top: 15px;
+    }
+    .result {
+      margin-top: 3px;
+    }
+    .explanation-text {
+      border: 1px solid #000000;
+      padding: 10px;
+      width:60%;
+    }
+    .task, .answer {
+      margin: 10px 0 0 20px;
+    }
+    .task-table {
+      margin-left: 20px;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px 0 20px 0;
+    }
+  </style>
+</head>
+<body>
+    <div class="page">
+      <div class="information">
+        <p class="name">Учащийся: <span>Иванов Иван Иванович</span></p> <!--Сюда вставлять имя пользователя (входные данные)-->
+        <p class="date">Дата прохождения: <span>06.07.2023</span></p> <!--Сюда вставлять дату прохождения (входные данные)-->
+        <p class="subject">Предмет: <span>Белорусский язык</span></p> <!--Сюда вставлять название предмета (входные данные)-->
+        <p class="test-name">Тест: <span>Этап I</span></p> <!--Сюда вставлять название теста (входные данные)-->
+      </div>
+      <div class="statistics">
+        <h1 class="statistics-title">Общая статистика</h1>
+        <table class="statistics-table">
+          <tr class="statistics-table-tr">
+            <td class="statistics-table-td">Первичный балл</td>
+            <td class="statistics-table-td"><span>12/46 (26%)</span></td> <!--Сюда вставлять высчитанный первичный балл-->
+          </tr>
+          <tr class="statistics-table-tr">
+            <td class="statistics-table-td">Предполагаемый тестовый балл</td>
+            <td class="statistics-table-td"><span>46/100</span></td> <!--Сюда вставлять предполагаемый тестовый балл-->
+          </tr>
+          <tr class="statistics-table-tr">
+            <td class="statistics-table-td">Время выполнения</td>
+            <td class="statistics-table-td"><span>01:15:47</span></td> <!--Сюда вставлять время выполнения (распарсить его именно в формат ЧЧ:ММ:СС)-->
+          </tr>
+          <tr class="statistics-table-tr">
+            <td class="statistics-table-td">Количество правильных ответов</td>
+            <td class="statistics-table-td"><span>14</span></td> <!--Сюда вставлять количество правильных ответов-->
+          </tr>
+          <tr class="statistics-table-tr">
+            <td class="statistics-table-td">Количество неправильных ответов</td>
+            <td class="statistics-table-td"><span>10</span></td> <!--Сюда вставлять количество неправильных ответов-->
+          </tr>
+        </table>
+      </div>
+      <div class="recomendations">
+        <h1 class="recomendations-title">Рекомендации от составителей</h1>
+        <p class="recomendations-text">Иван, вам нужно потрудиться!</p> <!--Сюда вставлять рекомендации от преподавателей-->
+      </div>
+      <div class="topics">
+        <!--Вот здесь очень важно: если посмотреть в документ, содержащий каскадный список тем, можно увидеть, что
+        иерархия идет по нисходящей вплоть до 6-го уровня. Для каждого уровня вложенности существует свой буллет (то, чем обозначается элемент списка).
+        Для первого уровня: &bull;, для второго уровня: &#9675;, для третьего уровня: &#9650; для четвертого уровня: &#9660; для пятого уровня: &#9658; для шестого уровня: &#9668;
+        Также не стоит забывать про &nbsp, который всегда нужно вставлять после буллета-->
+        <h1 class="topics-title">Темы для повторения</h1>
+        <div class="topics-preamble">
+          <i>Наш робот сформировал список тем, которые вызвали у Вас затруднения. 
+          Темы расставлены в порядке убывания приоритетности. Начните повторение с самых верхних тем.
+          </i>
+        </div>
+        <div class="topics-block">
+          <div class="topic">
+            <i class="topic-title">Орфография</i> <!--Название раздела-->
+            <p class="topic-first"><span>&bull;&nbsp;</span>Правописание корней с чередующимися гласными</p> <!--Правило первого уровня-->
+            <p class="topic-second"><span>&#9675;&nbsp;</span>Правописание корней с чередующимися гласными О/А</p> <!--Правило второго уровня-->
+            <p class="topic-third"><span>&#9650;&nbsp;</span>Выбор гласной зависит от ударения (ГОР/ГАР, КЛОН/КЛАН, ТВОР/ТВАР, ПЛОВ/ПЛАВ, ЗОР/ЗАР)</p> <!--Правило третьего уровня-->
+            <p class="topic-first"><span>&bull;&nbsp;</span>Правописание О, Е, Ё после шипящих, О, Е после Ц</p>
+            <p class="topic-second"><span>&#9675;&nbsp;</span>Правописание О, Ё после шипящих в корне слова</p>
+          </div>
+          <div class="topic">
+            <i class="topic-title">Пунктуация</i>
+            <p class="topic-first"><span>&bull;&nbsp;</span>Тире между подлежащим и сказуемым</p>
+            <p class="topic-second"><span>&#9675;&nbsp;</span>Тире перед словами ВОТ, ЭТО, ЗНАЧИТ</p>
+            <p class="topic-first"><span>&bull;&nbsp;</span>Знаки препинания при диалоге</p>
+            <p class="topic-second"><span>&#9675;&nbsp;</span>Реплики с особой строки</p>
+          </div>
+        </div>
+      </div>
+      <div class="consultation">
+        <h1 class="consultation-title">Консультация по вопросам</h1>
+        <div class="consultation-preamble"><i>В вопросах с вариантами ответа галочками отмечены выбранные Вами варианты</i></div>
+        <div class="question">
+          <!--Здесь очень важный момент. Может быть несколько типов вопросов: вопрос с вариантами ответа, вопрос с ответом в виде какого-то слова, вопрос на соотношение.-->
+          <h3 class="question-title">1. Пишется "А" на месте пропуска в словах:</h3> <!--Сюда вопрос-->
+          <div class="variants"><!--В этом блоке будут находиться варианты ответа. Правильным вариантам ответа, если в вопросе в принципе есть варианты ответа, давать класс right, а неправильным - класс wrong-->
+            <p class="variant right"><span>1) б..гровый</span><input type="checkbox" checked></p><!--Сюда вставлять вариант ответа. Атрибут checked дается тем вариантам ответа, которые были выбраны пользователем.-->
+            <p class="variant wrong"><span>2) пл..вцы</span><input type="checkbox"></p>
+            <p class="variant right"><span>3) к..снуться</span><input type="checkbox"></p>
+            <p class="variant wrong"><span>4) оч..рованный</span><input type="checkbox" checked></p>
+            <p class="variant right"><span>5) похвалить</span><input type="checkbox"></p>
+          </div>
+          <p class="time">Затраченное время: <span>00:01:02</span></p><!--Сюда вставляется время, затраченное на этот вопрос. Также необходимо распарсить его в формат ЧЧ:ММ:СС.-->
+          <p class="result">Задание: <span>Частично верное</span></p><!--Здесь вставляется итог выполнения задания: верное, неверное или частично верное. То, по каким правилам определять этот итог, изложено в задании.-->
+          <div class="explanation">
+            <h4 class="explanation-title">Пояснение</h4>
+            <div class="explanation-text"> <!--Здесь просто нужно вставить текст из столбца "Консультация" в файле с тестом-->
+                1)  бАгровый  – непроверяемая гласная корня;
+                2)  плОвцы  – корень с чередованием -ПЛОВ-/-ПЛАВ-: в слове «пловцы» в корне всегда О;
+                3)  кОснуться – корень с чередованием -КОС-/-КАС-: за корнем нет суффикса -А-, поэтому в корне пишем О – чередующаяся гласная корня;
+                4)  очАровательный – проверяемая гласная в корне: чАры;
+                5)  похвАлить – проверяемая гласная в корне: хвАлит.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="question">
+          <!--Вопрос текстового типа. Структура почти такая же, как у вопроса с вариантами ответа, но немного отличается.-->
+          <h3 class="question-title">2.Определите, сколько Н пишется в слове, выделенном в предложении текста. 
+            Раскройте скобки и запишите это слово правильно (в той форме, в которой оно употреблено в тексте). 
+          </h3>
+          <div class="task"><i>Голова большая, крупные округлые уши широко расставле(н,нн)ы, покрыты густым мхом.</i></div> <!--Сюда вставлять предложение из задания-->
+          <p class="answer">Ваш ответ: <span>расставленны</span></p>
+          <p class="time">Затраченное время: <span>00:02:03</span></p>
+          <p class="result">Задание: <span>Неверное</span></p>
+          <div class="explanation">
+            <h4 class="explanation-title">Пояснение</h4>
+            <div class="explanation-text">
+                Причастия в краткой форме пишутся с одной буквой Н.
+            </div>
+        </div>
+      </div>
+      <div class="question"> <!--Вопрос на соотношение. Отличается лишь тем, что табличка соотношения оформляется тегом table-->
+          <h3 class="question-title">3.Определите, непосредственно от каких частей речи образованы слова, и установите соответствие между столбцами. Ответ запишите в виде сочетания букв и цифр, 
+            соблюдая алфавитную последовательность букв левого столбца. Помните, что некоторые данные правого столбца могут использоваться несколько раз или не 
+            использоваться вообще. Например: А1Б1В4Г2:
+          </h3>
+          <table class="task-table">
+            <tr class="task-table-tr"> <!--Структура каждой строки (tr) одинакова: буква-цифра.-->
+              <td class="task-table-td">А. отныне</td>
+              <td class="task-table-td">1. от существительного</td>
+            </tr>
+            <tr class="task-table-tr">
+              <td class="task-table-td">Б. варочная</td>
+              <td class="task-table-td">2. от прилагательного</td>
+            </tr>
+            <tr class="task-table-tr">
+              <td class="task-table-td">В. вручную</td>
+              <td class="task-table-td">3. от глагола</td>
+            </tr>
+            <tr class="task-table-tr">
+              <td class="task-table-td">Г. вклад</td>
+              <td class="task-table-td">4. от наречия</td>
+            </tr>
+          </table>
+          <p class="answer">Ваш ответ: <span>А1Б1В4Г2</span></p>
+          <p class="time">Затраченное время: <span>00:01:33</span></p>
+          <p class="result">Задание: <span>Неверное</span></p>
+          <div class="explanation">
+            <h4 class="explanation-title">Пояснение</h4>
+            <div class="explanation-text">
+              Наречие “отныне” образовано от наречия “ныне” при помощи приставки ОТ-.
+              Прилагательное “варочная” образовано от существительного “варка” при помощи суффикса -Н-, следует обратить внимание на фонетическое чередование -К-/-ОЧ-.
+              Наречие “вручную” образовано от прилагательного “ручной” при помощи приставки В- и суффикса -УЮ.
+              Существительное “вклад” (со значением результат действия) образовано от глагола “вкладывать” при помощи нулевого суффикса.          
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">Tutorless &copy;</footer>
+    </div>
+</body>
+</html>
