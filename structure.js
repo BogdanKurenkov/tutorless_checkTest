@@ -1,53 +1,22 @@
 /*Classes*/
-class Inner{};
 class Test{};
-class Answer{};
 class Question{};
-class QuestionThemes{};
-class AllThemes{};
 
-/* То, что получает Саша */
-const inner = {
-  test: "Test",
-  themes: "AllThemes",
-}
+/* То, что получает Саша. Объект класса Test */
 
 const test = {
-  testId: "number",
-  subjectId: "number",
-  fulltime: "number",
-  stage: "number",
-  questions: ["Question", "Question", "Question"],
-}
-
-const answer = {
-  right: "boolean", //Необязательное свойство
-  text: "string"
+  name: "string",
+  subject: "string",
+  fullTime: "string",
+  questions: "Question[]",
 }
 
 const question = {
-  questionId: "number",
-  task: "string",
-  attachment: "string", //Необязательное свойство
+  id: "number",
+  name: "string",
   type: "string",
-  answers: ["Answer", "Answer", "Answer"],
-  time: "string",
-  themes: "QuestionThemes",
-}
-
-const QuestionThemes = {
-  themes: [
-    {
-      themeName: "string",
-      index: "1"
-    },
-    {
-      themeName: "string",
-      index: "1.1"
-    }
-  ],
-}
-
-const AllThemes = {
-  allThemes: ["QuestionThemes", "QuestionThemes", "QuestionTheme"]
+  addition: "string", //Необязательное свойство
+  task: "string",
+  image: "string", //Необязательное свойство
+  variants: "string[]", //Необязательное свойство
 }
