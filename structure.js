@@ -22,5 +22,7 @@ const question = {
   task: "string",
   image: "string", //Необязательное свойство
   variants: "string[]", //Необязательное свойство
+  letterVariants: "string[]", //Необязательное свойство
+  numericVariants: "string[]", //Необязательное свойство
   answers: "string[]",
 }
