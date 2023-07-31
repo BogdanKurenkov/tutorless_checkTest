@@ -1,10 +1,13 @@
 /*Classes*/
 class Test{};
+class User{};
 class Question{};
 
 /* То, что получает Саша. Объект класса Test */
 
 const test = {
+  userFullname: "string",
+  date: "string",
   name: "string",
   subject: "string",
   fullTime: "string",
@@ -19,4 +22,5 @@ const question = {
   task: "string",
   image: "string", //Необязательное свойство
   variants: "string[]", //Необязательное свойство
+  answers: "string[]",
 }
