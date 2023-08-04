@@ -437,5 +437,5 @@ class JSONtoHTML:
             self.problem_themes[key] = list(set(self.problem_themes[key]))
 
 
-file = JSONtoHTML('test.json', 'rules.txt')
+file = JSONtoHTML('old.json', 'rules.txt')
 file.render_html()

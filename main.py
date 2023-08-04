@@ -716,7 +716,7 @@ class Test:
             output_file1.write(string_for_html_file)
 
 
-good_test = Test("test.json", "rules.txt")
+good_test = Test("old.json", "rules.txt")
 
 good_recs_index, rules_list = good_test.make_recommendations()
 good_test.make_html_file()
