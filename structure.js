@@ -15,7 +15,6 @@ const test = {
 }
 
 const question = {
-  id: "number",
   name: "string",
   type: "string", //(типы вопросов: variants, textarea, variants_with_textarea, variants_with_picture, textarea_with_picture, variants_addition, textarea_with_addition, ratio)
   addition: "string", //Необязательное свойство
@@ -25,4 +24,12 @@ const question = {
   letterVariants: "string[]", //Необязательное свойство
   numericVariants: "string[]", //Необязательное свойство
   answers: "string[]",
+}
+
+const data = {
+  name: "string",
+  rightAnswers: "string[]",
+  themes: "string[]",
+  commentary: "string",
+  acceptableTime: "number"
 }
