@@ -6,7 +6,6 @@
   "fullTime": "01:20:47",
   "questions": [
     {
-      "id": "1",
       "name": "А1",
       "type": "variants",
       "time": 30,
@@ -15,7 +14,6 @@
       "answers": ["1", "2"]
     },
     {
-      "id": "2",
       "name": "А2",
       "type": "variants",
       "time": 30,
@@ -24,7 +22,6 @@
       "answers": ["3", "4"]
     },
     {
-      "id": "3",
       "name": "А3",
       "type": "variants",
       "time": 30,
@@ -33,7 +30,6 @@
       "answers": ["1", "2", "3"]
     },
     {
-      "id": "4",
       "name": "А4",
       "type": "variants",
       "time": 30,
@@ -42,7 +38,6 @@
       "answers": ["2", "3"]
     },
     {
-      "id": "5",
       "name": "А5",
       "type": "variants",
       "time": 30,
@@ -51,7 +46,6 @@
       "answers": ["4", "5"]
     },
     {
-      "id": "6",
       "name": "А6",
       "type": "variants",
       "time": 30,
@@ -60,7 +54,6 @@
       "answers": ["1", "3", "5"]
     },
     {
-      "id": "7",
       "name": "А7",
       "type": "variants",
       "time": 30,
@@ -69,7 +62,6 @@
       "answers": ["2", "3"]
     },
     {
-      "id": "8",
       "name": "А8",
       "type": "variants",
       "time": 30,
@@ -78,7 +70,6 @@
       "answers": ["3", "5"]
     },
     {
-      "id": "9",
       "name": "А9",
       "type": "variants",
       "time": 30,
@@ -87,7 +78,6 @@
       "answers": ["1", "2", "4"]
     },
     {
-      "id": "10",
       "name": "А10",
       "type": "variants",
       "time": 30,
@@ -96,7 +86,6 @@
       "answers": ["3", "5"]
     },
     {
-      "id": "11",
       "name": "А11",
       "type": "variants",
       "time": 30,
@@ -105,7 +94,6 @@
       "answers": ["1", "2", "3"]
     },
     {
-      "id": "12",
       "name": "А12",
       "type": "variants",
       "time": 30,
@@ -114,7 +102,6 @@
       "answers": ["2", "4"]
     },
     {
-      "id": "13",
       "name": "А13",
       "type": "variants",
       "time": 30,
@@ -123,7 +110,6 @@
       "answers": ["1", "2", "3"]
     },
     {
-      "id": "14",
       "name": "А14",
       "type": "variants",
       "time": 30,
@@ -132,7 +118,6 @@
       "answers": ["3", "5"]
     },
     {
-      "id": "15",
       "name": "А15",
       "type": "variants",
       "time": 30,
@@ -141,7 +126,6 @@
       "answers": ["1", "2", "4"]
     },
     {
-      "id": "16",
       "name": "А16",
       "type": "variants",
       "time": 30,
@@ -150,7 +134,6 @@
       "answers": ["3", "4"]
     },
     {
-      "id": "17",
       "name": "А17",
       "type": "variants",
       "time": 30,
@@ -159,7 +142,6 @@
       "answers": ["1", "2", "4"]
     },
     {
-      "id": "18",
       "name": "А18",
       "type": "variants",
       "time": 30,
@@ -168,7 +150,6 @@
       "answers": ["1", "4", "5"]
     },
     {
-      "id": "19",
       "name": "B1",
       "type": "textarea",
       "time": 30,
@@ -177,7 +158,6 @@
       "answers": ["успех"]
     },
     {
-      "id": "20",
       "name": "B2",
       "type": "textarea",
       "time": 30,
@@ -186,7 +166,6 @@
       "answers": ["выбор"]
     },
     {
-      "id": "21",
       "name": "B3",
       "type": "textarea",
       "time": 30,
@@ -195,7 +174,6 @@
       "answers": ["мыслит"]
     },
     {
-      "id": "22",
       "name": "B4",
       "type": "textarea",
       "time": 30,
@@ -204,7 +182,6 @@
       "answers": ["расставлены"]
     },
     {
-      "id": "23",
       "name": "B5",
       "type": "textarea",
       "time": 30,
@@ -213,7 +190,6 @@
       "answers": ["ошибку"]
     },
     {
-      "id": "24",
       "name": "B6",
       "type": "textarea",
       "time": 30,
@@ -222,7 +198,6 @@
       "answers": ["большинство"]
     },
     {
-      "id": "25",
       "name": "B7",
       "type": "textarea",
       "time": 30,
@@ -231,7 +206,6 @@
       "answers": ["путь"]
     },
     {
-      "id": "26",
       "name": "B8",
       "type": "textarea",
       "time": 30,
@@ -240,7 +214,6 @@
       "answers": ["123"]
     },
     {
-      "id": "27",
       "name": "B9",
       "type": "textarea",
       "time": 30,
@@ -249,7 +222,6 @@
       "answers": ["между"]
     },
     {
-      "id": "28",
       "name": "B10",
       "type": "textarea",
       "time": 30,
@@ -258,7 +230,6 @@
       "answers": ["секции"]
     },
     {
-      "id": "29",
       "name": "B11",
       "type": "textarea",
       "time": 30,
@@ -267,7 +238,6 @@
       "answers": ["умоляющем"]
     },
     {
-      "id": "30",
       "name": "B12",
       "type": "textarea",
       "time": 30,
@@ -276,7 +246,6 @@
       "answers": ["явственным"]
     },
     {
-      "id": "31",
       "name": "B13",
       "type": "textarea",
       "time": 30,
@@ -285,7 +254,6 @@
       "answers": ["1245"]
     },
     {
-      "id": "32",
       "name": "B14",
       "type": "textarea",
       "time": 30,
@@ -294,7 +262,6 @@
       "answers": ["корень"]
     },
     {
-      "id": "33",
       "name": "B15",
       "type": "textarea",
       "time": 30,
@@ -303,7 +270,6 @@
       "answers": ["перетерпевшийся"]
     },
     {
-      "id": "34",
       "name": "B16",
       "type": "textarea",
       "time": 30,
@@ -312,7 +278,6 @@
       "answers": ["песен"]
     },
     {
-      "id": "35",
       "name": "B17",
       "type": "textarea",
       "time": 30,
@@ -321,7 +286,6 @@
       "answers": ["полотенцы"]
     },
     {
-      "id": "36",
       "name": "B18",
       "type": "variants_with_textarea",
       "time": 30,
@@ -330,7 +294,6 @@
       "answers": ["123"]
     },
     {
-      "id": "37",
       "name": "B19",
       "type": "variants_with_textarea",
       "time": 30,
@@ -339,7 +302,6 @@
       "answers": ["234"]
     },
     {
-      "id": "38",
       "name": "B20",
       "type": "ratio",
       "time": 30,
@@ -349,7 +311,6 @@
       "answers": ["A4Б1В2Г3"]
     },
     {
-      "id": "39",
       "name": "B21",
       "type": "variants",
       "time": 30,
@@ -358,7 +319,6 @@
       "answers": ["1", "2", "3"]
     },
     {
-      "id": "40",
       "name": "B22",
       "type": "ratio",
       "time": 30,
