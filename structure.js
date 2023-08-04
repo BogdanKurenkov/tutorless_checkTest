@@ -17,7 +17,7 @@ const test = {
 const question = {
   id: "number",
   name: "string",
-  type: "string",
+  type: "string", //(типы вопросов: variants, textarea, variants_with_textarea, variants_with_picture, textarea_with_picture, variants_addition, textarea_with_addition)
   addition: "string", //Необязательное свойство
   task: "string",
   image: "string", //Необязательное свойство
