@@ -3,7 +3,6 @@ from __future__ import annotations
 import json
 from dataclasses import dataclass
 import datetime
-
 import jinja2
 
 
@@ -247,7 +246,7 @@ class JSONtoHTML:
     def render_html(self):
         self.make_recommendations()
         self.make_html_file()
-        html = open('1111111111.html', encoding='utf8').read()
+        html = open('template.html', encoding='utf8').read()
         template_ = jinja2.Template(html)
         self.test.questions
         rendered_html = (template_.render(
@@ -264,7 +263,7 @@ class JSONtoHTML:
             num_of_incorrect_answers=self.num_of_incorrect_answers
         ))
         # print(rendered_html)
-        with open('jinja2.html', 'w', encoding='utf8') as f:
+        with open('analytics.html', 'w', encoding='utf8') as f:
             f.write(rendered_html)
 
     def make_user_score(self) -> list:
