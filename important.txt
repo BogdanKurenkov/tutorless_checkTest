@@ -1,0 +1,9 @@
+Questions types:
+    variants,
+    textarea,
+    variants_with_textarea,
+    variants_with_picture,
+    textarea_with_picture,
+    variants_with_addition,
+    textarea_with_addition,
+    ratio
