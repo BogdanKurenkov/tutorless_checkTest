@@ -5,18 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec2d7a87-45a9-45bc-a271-45a52f42c44f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/important.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTMLConverter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rules.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rules.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/copyScript.py" beforeDir="false" afterPath="$PROJECT_DIR$/testHandler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.json" beforeDir="false" afterPath="$PROJECT_DIR$/server.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,7 +53,7 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration name="copyScript" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="testHandler" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="tutorless_checkTest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -57,7 +64,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/copyScript.py" />
+      <option name="SCRIPT_NAME" value="D:\Tutorless\tutorless_checkTest\testHandler.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="true" />
@@ -79,7 +86,7 @@
       <workItem from="1691578826654" duration="2048000" />
       <workItem from="1692013033365" duration="597000" />
       <workItem from="1692014139370" duration="12407000" />
-      <workItem from="1692185331204" duration="6148000" />
+      <workItem from="1692185331204" duration="96413000" />
     </task>
     <servers />
   </component>
@@ -87,6 +94,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/tutorless_checkTest$copyScript.coverage" NAME="copyScript Coverage Results" MODIFIED="1692189469511" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tutorless_checkTest$copyScript.coverage" NAME="testHandler Coverage Results" MODIFIED="1693746935016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
